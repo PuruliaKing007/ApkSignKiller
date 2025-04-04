@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="Base.AppTheme" parent="Theme.Material3.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+	<item name="colorAccent">@color/colorAccent</item>
+    <item name="colorPrimaryVariant">@color/colorPrimary</item>
+    <item name="colorOnPrimary">#FFFFFF</item>
+    <item name="colorSecondary">@color/colorPrimary</item>
+  </style>
+
+  <style name="AppTheme" parent="Base.AppTheme" />
+</resources>

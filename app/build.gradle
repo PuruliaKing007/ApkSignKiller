@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.fixtorv.apksignkiller'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "com.fixtorv.apksignkiller"
+        minSdk 21
+        targetSdk 28
+        versionCode 1
+        versionName "1.0"
+		
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+	
+	lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":filepicker")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+	implementation("androidx.preference:preference-ktx:1.2.0")
+    implementation("com.google.android.material:material:1.9.0")
+	implementation("com.google.guava:guava:31.0.1-android")
+	implementation("org.jetbrains:annotations:22.0.0")
+	implementation("commons-io:commons-io:2.3")
+}

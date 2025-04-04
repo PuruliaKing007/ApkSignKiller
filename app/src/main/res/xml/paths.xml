@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="internal"
+        path="."/>
+    <external-path name="external_files" path="."/>
+    <external-path path="Android/data/com.fixtorv.apksignkiller/" name="files_root1" />
+    <external-path path="/data/user/0/com.fixtorv.apksignkiller/" name="files_root2" />
+    <external-path path="/data/user/0/com.fixtorv.apksignkiller/cache" name="files_root3" />
+    <external-path path="/data/data/com.fixtorv.apksignkiller/" name="files_root4" />
+    <external-path path="/data/data/com.fixtorv.apksignkiller/cache" name="files_root5" />
+    <root-path name="root" path="." />
+</paths>
